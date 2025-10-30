@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ćwiczenie 3 – Kolorowe kwadraty</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        text-align: center;
+      }
+
+      .wiersz {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+
+      .kwadrat {
+        width: 100px;
+        height: 100px;
+      }
+
+      .czerwony {
+        background-color: red;
+      }
+      .zielony {
+        background-color: green;
+      }
+      .niebieski {
+        background-color: blue;
+      }
+      .zolty {
+        background-color: yellow;
+      }
+
+      .obrazek img {
+        width: 100px;
+        height: 100px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Kolorowe kwadraty</h2>
+
+    <!-- Pierwszy rząd – 2 kwadraty -->
+    <div class="wiersz">
+      <div class="kwadrat czerwony"></div>
+      <div class="kwadrat zielony"></div>
+    </div>
+
+    <!-- Drugi rząd – 3 kwadraty (środkowy to obrazek) -->
+    <div class="wiersz">
+      <div class="kwadrat niebieski"></div>
+      <div class="kwadrat obrazek">
+        <img
+          src="https://i.pinimg.com/736x/1c/9a/90/1c9a904c6c27e00ab31d13f28c8981a1.jpg"
+          alt="Obrazek"
+        />
+      </div>
+      <div class="kwadrat zolty"></div>
+    </div>
+  </body>
+</html>
