@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt - Creepypasta World</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <h1 class="brand">Creepypasta World</h1>
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Historia</a>
+            <a href="postacie.html">Postacie</a>
+            <a href="opowiesci.html">Opowieści</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="kontakt.html" style="border: 1px solid var(--accent)"
+              >Kontakt</a
+            >
+            <button id="theme-toggle">Tryb</button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="contact-form">
+          <h2>Napisz do nas</h2>
+          <form id="contactForm">
+            <label for="email">E‑Mail:</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="wpisz swój email"
+              required
+            />
+
+            <label for="subject">Temat wiadomości:</label>
+            <select id="subject" name="subject">
+              <option value="opowiesci">Opowieści</option>
+              <option value="postacie">Postacie</option>
+              <option value="wspolpraca">Współpraca</option>
+              <option value="inne">Inne</option>
+            </select>
+
+            <label for="message">Wiadomość:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Twoja wiadomość..."
+              required
+            ></textarea>
+
+            <input type="submit" value="Wyślij" />
+          </form>
+
+          <div id="formResult" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">Autor: Maja Drohobycka © 2025</div>
+      </footer>
+    </div>
+  </body>
+</html>
