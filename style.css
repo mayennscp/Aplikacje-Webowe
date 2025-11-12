@@ -1,16 +1,41 @@
-html {
-      background-color: #DDBEAA;
-      height: 100vh;
-}
-
-body {
-      height: 100vh;
-      margin: 0;
-}
-
 .main-container {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 20px;
+}
+
+.exercise-list {
+  list-style-position: inside;
+  width: 300px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.exercise-list li {
+  margin: 10px 0;
+}
+
+.exercise-list a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 5px;
+  display: inline-block;
+}
+
+.exercise-list li:nth-child(1) a {
+  color: #ff5733;
+}
+
+.exercise-list li:nth-child(2) a {
+  color: #33ff57;
+}
+
+.exercise-list li:nth-child(3) a {
+  color: #3357ff;
+}
+
+.exercise-list a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
